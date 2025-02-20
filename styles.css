@@ -330,6 +330,131 @@
     margin-top: 30px;
 }
 
+/* Halaman Keempat - Destinasi */
+.destination-section {
+    position: relative;
+    background: #f8fafc;
+    padding: 120px 40px 80px;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.curve-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.curve {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background: #111827;
+}
+
+.curve::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8fafc;
+    border-radius: 50% 50% 0 0;
+    transform: translateY(50%);
+}
+
+.destination-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.destination-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.destination-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.destination-info p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Animasi Scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-left {
+    transform: translateX(-30px);
+}
+
+.fade-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right {
+    transform: translateX(30px);
+}
+
+.fade-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .content-section {
@@ -353,6 +478,18 @@
 @media (max-width: 768px) {
     .hero, .growth-section, .content-section, .section-container {
         padding: 40px 20px;
+    }
+
+    .destination-section {
+        margin-top: -40px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .curve {
+        height: 80px;
     }
 
     .nav-links {
@@ -488,11 +625,24 @@
     .feature-card:last-child {
         border-radius: 20px;
     }
+    
+    .destination-title {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .hero, .growth-section, .content-section, .section-container {
         padding: 30px 15px;
+    }
+    
+    .destination-section {
+        padding: 80px 15px 30px;
+    }
+
+    .curve {
+        height: 60px;
     }
 
     .growth-title {
@@ -505,5 +655,13 @@
     
     .feature-card {
         padding: 20px;
+    }
+    
+    .destination-title {
+        font-size: 1.8rem;
+    }
+    
+    .destination-grid {
+        gap: 20px;
     }
 }
