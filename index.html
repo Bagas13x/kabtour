@@ -16,7 +16,7 @@
             <a href="#tentang">Tentang Kami</a>
             <a href="#kontak">Kontak Kami</a>
             <a href="#bantuan">Bantuan</a>
-            <button class="login-btn">
+            <button class="login-btn" onclick="window.location.href='login.html'">
                 <svg class="login-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15M10 17L15 12M15 12L10 7M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                 </svg>
@@ -60,7 +60,7 @@
             </div>
             <div class="video-container animate-on-scroll fade-right">
                 <video controls playsinline>
-                    <source src="./assets/Kabtour (1) (1).mp4" type="video/mp4">
+                    <source src="./assets/Kabtour.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -139,6 +139,229 @@
             </div>
         </div>
     </section>
+
+    <!-- Halaman Kelima - Rewards -->
+<section class="rewards-section">
+    <div class="rewards-container">
+        <div class="rewards-slider">
+            <div class="rewards-slide active">
+                <div class="rewards-content">
+                    <h2 class="rewards-title animate-on-scroll fade-up">Nikmati berbagai macam reward khusus untukmu di sini!</h2>
+                    <button class="rewards-button">Selengkapnya</button>
+                </div>
+                <img src="./assets/frame1.jpg" alt="Rewards" class="rewards-bg">
+            </div>
+            <!-- Additional slides -->
+            <div class="rewards-slide">
+                <div class="rewards-content">
+                    <h2 class="rewards-title">Dapatkan diskon spesial untuk perjalanan pertamamu!</h2>
+                    <button class="rewards-button">Selengkapnya</button>
+                </div>
+                <img src="./assets/frame1.jpg" alt="Rewards" class="rewards-bg">
+            </div>
+            <div class="rewards-slide">
+                <div class="rewards-content">
+                    <h2 class="rewards-title">Kumpulkan poin dan tukarkan dengan hadiah menarik!</h2>
+                    <button class="rewards-button">Selengkapnya</button>
+                </div>
+                <img src="./assets/frame1.jpg" alt="Rewards" class="rewards-bg">
+            </div>
+        </div>
+        <div class="slider-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Halaman Produk Kami -->
+<section class="product-section">
+    <div class="section-content">
+        <h2 class="product-title animate-on-scroll fade-up">Produk Kami</h2>
+        
+        <div class="product-grid">
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.1s">
+                <div class="product-icon blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <h3 class="product-type">Penginapan</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Homestay, vila, rumah kost</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.2s">
+                <div class="product-icon purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"></rect>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                </div>
+                <h3 class="product-type">Rental Kendaraan</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Mobil, Motor</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.3s">
+                <div class="product-icon orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+                        <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
+                        <path d="M18 12a2 2 0 0 0 0 4h2v-4h-2z"></path>
+                    </svg>
+                </div>
+                <h3 class="product-type">Produk Lokal UMKM</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Fashion, oleh-oleh, dekorasi</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.4s">
+                <div class="product-icon amber">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 9V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4"></path>
+                        <path d="M3 9v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"></path>
+                        <path d="M8 9h8"></path>
+                    </svg>
+                </div>
+                <h3 class="product-type">Restoran</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Homestay, vila, rumah kost</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.5s">
+                <div class="product-icon light-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        <path d="M2 12h20"></path>
+                    </svg>
+                </div>
+                <h3 class="product-type">Tour</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Homestay, vila, rumah kost</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.6s">
+                <div class="product-icon green">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3 class="product-type">Tiket Wisata</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Homestay, vila, rumah kost</p>
+            </div>
+            
+            <div class="product-card animate-on-scroll fade-up" data-delay="0.7s">
+                <div class="product-icon teal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M9 10h6"></path>
+                        <path d="M9 14h6"></path>
+                    </svg>
+                </div>
+                <h3 class="product-type">Layanan & Jasa</h3>
+                <p class="product-count">100+</p>
+                <p class="product-description">Homestay, vila, rumah kost</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- App Showcase Section -->
+<img src="assets/ulasan (2).png" alt="Kabtour App" class="full-width-image">
+<!-- halaman terakhir  -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="assets/Kabtour Logo.png" alt="Kabtour" class="footer-logo-img">
+            <p class="footer-tagline">Your Digital Tourmate</p>
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karir</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Gabung</h4>
+                <ul>
+                    <li><a href="#">Mitra Usaha</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Produk</h4>
+                <ul>
+                    <li><a href="#">Penginapan</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Restoran</a></li>
+                    <li><a href="#">Produk Lokal UMKM</a></li>
+                    <li><a href="#">Rental Kendaraan</a></li>
+                    <li><a href="#">Tiket Wisata</a></li>
+                    <li><a href="#">Layanan & Jasa</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Hubungi kami</h4>
+                <ul>
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Lokasi kami</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="assets/twitter.png" alt="Twitter"></a>
+                    <a href="#" class="social-icon"><img src="assets/instagram.png" alt="Instagram"></a>
+                </div>
+                
+                <h4 class="download-title">Download the app</h4>
+                     <div class="app-buttons">
+                        <a href="#" class="app-button">
+                             <img src="assets/App Store.png" alt="Download on App Store">
+                                 </a>
+        <a href="#" class="app-button">
+            <img src="assets/google play.png" alt="Get it on Google Play">
+        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-links">
+            <a href="#">Pengaturan Cookie</a>
+            <a href="#">Privasi</a>
+            <a href="#">Syarat dan Ketentuan</a>
+        </div>
+        <div class="language-selector">
+            <select>
+                <option selected>English (United States)</option>
+                <option>Bahasa Indonesia</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>©copyright 2025 Kabtour. All rights reserved</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>
